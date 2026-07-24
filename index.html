@@ -1,11 +1,498 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="assets/img/Logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>StarCell</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                StarCell
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-underline me-auto mb-3 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Intro">Bienvenido</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Productos">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Servicios">Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Preguntas">Preguntas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Ubicacion">Ubícanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Formulario">Contáctenos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pb-3">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <img src="assets/img/header/Banner1.jpeg" class="d-block w-100" alt="Banner 1">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/img/header/Banner2.jpeg" class="d-block w-100" alt="Banner 2">
+                </div>
+                <div class="carousel-item">
+                <img src="assets/img/header/Banner3.jpeg" class="d-block w-100" alt="Banner 3">
+                </div>
+            </div>
+        </div>
+    </header>
     
+    <main>
+        <section class="container" id="Intro">
+            <div class="card my-3 cardTypeA" style="max-width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-8">
+                        <div class="card-body py-5">
+                            <h1 class="display-2">Bienvenido a Star-cell siempre contigo</h1>
+                            <p class="card-text display-6">Si no consigues tus productos, te los podemos encargar.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="assets/img/intro/Intro.jpg" class="img-fluid rounded-start" alt="Telefono">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container-fluid py-3 containerTypeA" id="Productos">    
+            <div class="container">
+                <h2 class="text-center display-6">Productos</h2>
+                <p class="text-center">Descubre nuestros productos mas destacados</p>
+                <form action="#" method="post" class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Buscar Producto..." aria-label="Example text with button addon" aria-describedby="button-addon1">
+                    <datalist id="datalistOptions">
+                        <option value="Teléfono">
+                        <option value="Cable">
+                        <option value="Pendrive">
+                        <option value="Memoria">
+                        <option value="Audifonos">
+                    </datalist>    
+                    <button class="btn btn-outline-secondary" type="button" id="button-addon1">Buscar</button>
+                </form>                
+
+                <div class="container-fluid justify-content-center py-3">
+                    <div class="row row-gap-3 row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+                        <div class="col ">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/AudifonosAlambricos.jpg" class="card-img-top" alt="Audifonos Alambricos">
+                                <div class="card-body">
+                                    <h6 class="card-title">Audífonos con Cable</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/AudifonosInalambricos.jpg" class="card-img-top" alt="Audifonos Inalambricos">
+                                <div class="card-body">
+                                    <h6 class="card-title">Audífonos Inalámbricos</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/Cargadores.jpg" class="card-img-top" alt="Cargadores Carga Rapida">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cargadores Carga Rápida</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/CargadoresTipoC.jpg" class="card-img-top" alt="CargadoresTipo C">
+                                <div class="card-body">
+                                    <h6 class="card-title">Cargadores Tipo C</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/ForroTelefono.jpg" class="card-img-top" alt="Forro de Telefono">
+                                <div class="card-body">
+                                    <h6 class="card-title">Forro de Teléfono</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/MicrofonoInalambrico.jpg" class="card-img-top" alt="Microfono Inalambrico">
+                                <div class="card-body">
+                                    <h6 class="card-title">Micrófono Inalámbrico</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/ProtectorCamara.jpg" class="card-img-top" alt="Protector Camara">
+                                <div class="card-body">
+                                    <h6 class="card-title">Protector de Cámara</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/VidrioTemplado.jpg" class="card-img-top" alt="Vidrio Templado">
+                                <div class="card-body">
+                                    <h6 class="card-title">Vidrio Templado</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/Pendrive.jpg" class="card-img-top" alt="Pendrive">
+                                <div class="card-body">
+                                    <h6 class="card-title">Pendrive de 32GB</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card cardTypeB" style="width: 100%;">
+                                <img src="assets/img/productos/MemoriaSD.jpg" class="card-img-top" alt="MemoriaSD">
+                                <div class="card-body">
+                                    <h6 class="card-title">Tarjeta SD de 128GB</h6>
+                                    <p class="card-text">Disponible</p>
+                                    <a href="#" class="btn btn-primary">Preguntar Precio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="pagination justify-content-center">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </div>
+
+
+        </section>
+
+        <section class="container justify-content-center my-5" id="Servicios">
+            <h2 class="text-center display-6">Servicios</h2>
+            <p class="text-center">Descubre nuestros servicios mas destacados</p>
+            <div class="container justify-content-center my-3">
+                <div class="row row-gap-3 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Cambio de pantallas y cristales</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Reparación de paneles táctiles, OLED/LCD y reemplazo de cristal trasero</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Reemplazo de baterías</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Cambio de baterías degradadas e hinchadas</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Reparación de puerto de carga</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Limpieza, resoldado o reemplazo del pin de carga / USB-C / Lightning</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Mantenimiento y diagnóstico</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Revisión general de hardware, limpieza interna y tratamiento por humedad</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Reparación de componentes</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Cambio de cámaras, altavoces, micrófonos, botones y vibrador</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Microelectrónica avanzada</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Reparación de placa base, solución de cortos y reballing</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Migración y respaldo de datos</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Transferencia completa de fotos, contactos y apps (iOS / Android)</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card cardTypeC" style="width: 100%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Recuperación de datos</h6>
+                                <h6 class="card-subtitle mb-2 text-body-secondary">Extracción de archivos en equipos dañados o inoperativos</h6>
+                                <p class="card-text">Disponible</p>
+                                <a href="#" class="card-link">Solicitar Información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container justify-content-center my-5" id="Preguntas">
+            <h2 class="text-center display-6">Preguntas Frecuentes</h2>
+            <p class="text-center">¿Tienes algunas dudas? Aqui estan algunas de la preguntas mas recurrentes en la tienda</p>
+            <div class="accordion" id="accordionFAQ">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseOne" aria-expanded="true" aria-controls="faq-collapseOne">
+                        ¿Cómo sé si la funda o cristal templado es compatible con mi modelo de teléfono?
+                    </button>
+                    </h2>
+                    <div id="faq-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <strong>Verifica el modelo exacto de tu equipo.</strong> Puedes ir a la configuración de tu teléfono en <em>Ajustes > Acerca del teléfono</em> para confirmar el nombre o número de modelo exacto. En la ficha de cada producto indicamos la compatibilidad específica, ya que las dimensiones, botones y cámaras varían incluso entre versiones estándar y "Pro" o "Plus".
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseTwo" aria-expanded="false" aria-controls="faq-collapseTwo">
+                        ¿Los cargadores y cables son originales o cuentan con alguna certificación?
+                    </button>
+                    </h2>
+                    <div id="faq-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <strong>Todos nuestros accesorios de carga son 100% seguros.</strong> Contamos con cargadores originales y de marcas certificadas (como certificación MFi para dispositivos Apple y estándares de carga rápida Qi/Power Delivery). Esto garantiza que no dañarán la batería de tu dispositivo ni afectarán el rendimiento.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseThree" aria-expanded="false" aria-controls="faq-collapseThree">
+                        ¿Los productos tienen garantía y cuál es la política de devoluciones?
+                    </button>
+                    </h2>
+                    <div id="faq-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <strong>Ofrecemos garantía contra defectos de fábrica.</strong> Si tu producto presenta alguna falla técnica o te equivocaste de modelo al realizar tu compra, dispones de hasta 30 días para realizar un cambio o devolución. El producto debe conservar su empaque original sin daños físicos provocados por mal uso.
+                    </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapseSix" aria-expanded="false" aria-controls="faq-collapseSix">
+                        ¿Qué métodos de pago aceptan en la tienda?
+                    </button>
+                    </h2>
+                    <div id="faq-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFAQ">
+                    <div class="accordion-body">
+                        <strong>Ofrecemos Múltiples Opciones de Pago.</strong> Aceptamos tarjetas de crédito y débito, transferencias bancarias, plataformas de pago digital (como Zelle) y pagos en efectivo.
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container justify-content-center my-5" id="Ubicacion">
+            <h2 class="text-center display-6">Ubicanos</h2>
+            <p class="text-center">Estamos ubicados en el C.C Mall Delicias Plaza</p>
+            <div class="my-3" style="max-width: 100%;">
+                <div class="row row-gap-3">
+                    <div class="col-md-6">
+                        <iframe title="Mapa" class="card" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3920.636791104204!2d-71.62552699999999!3d10.685274699999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e89992937c08807%3A0xa5ba0734ddeb6523!2sCentro%20Comercial%20Mall%20Delicias%20Plaza!5e0!3m2!1ses-419!2sve!4v1784815604613!5m2!1ses-419!2sve" width="600" height="450" style="border:0; width: 100%; height: 500px;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                    </div>
+                    <div class="col-md-6 align-top">
+                        <div class="card p-3">
+                            <h6 class="card-title">Ubicacion</h6>
+                            <p class="card-text">Centro Comercial Mall Delicias Plaza M9PF+4Q5, Av. Las Delicias, Maracaibo 4005, Zulia.</p>
+                        </div>
+                        <div class="card p-3 mt-3">
+                            <h6 class="card-title">Telefono</h6>
+                            <p class="card-text">+58 0412-1667105</p>
+                        </div>
+                        <div class="card p-3 mt-3">
+                            <h6 class="card-title">Horario</h6>
+                            <p class="card-text">De lunes a sabado.</p>
+                            <p class="card-text"><small class="text-body-secondary">10 am - 7 pm</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container justify-content-center my-5 w-75" id="Formulario">
+            <h2 class="text-center display-6">Escribenos</h2>
+            <p class="text-center">¿Necesitas algo? no dudes en escribirnos</p>
+                <form action="#" method="post" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="Nombre" class="form-label">Nombre</label>
+                        <input type="text" name="Nombre" id="Nombre" class="form-control" required 
+                            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$" title="Solo letras y espacios" placeholder="Ej. Jose">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Apellido" class="form-label">Apellido</label>
+                        <input type="text" name="Apellido" id="Apellido" class="form-control" required 
+                            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$" title="Solo letras y espacios" placeholder="Ej. Pérez">
+                    </div>
+                    <div class="col-6">
+                        <label for="Telefono" class="form-label">Telefono</label>
+                        <input type="tel" name="Teléfono" id="Teléfono" class="form-control" required 
+                            pattern="[0-9]{4}-[0-9]{7}" title="Introduzca un número de teléfono válido" placeholder="0000-0000000">
+                    </div>
+                    <div class="col-6">
+                        <label for="Marca" class="form-label">Marca de Teléfono</label>
+                        <select id="Marca" class="form-select" title="Elige tu Teléfono">
+                            <option value="" selected>-- Selecciona --</option>
+                            <option value="Samsung">Samsung</option>
+                            <option value="Apple">Apple</option>
+                            <option value="Xiaomi">Xiaomi</option>
+                            <option value="Motorola">Motorola</option>
+                            <option value="Huawei">Huawei</option>
+                            <option value="Realme">Realme</option>
+                            <option value="OPPO">OPPO</option>
+                            <option value="Honor">Honor</option>
+                            <option value="Infinix">Infinix</option>
+                            <option value="Tecno">Tecno</option>
+                            <option value="Google">Google (Pixel)</option>
+                            <option value="ZTE">ZTE</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <div class="form-check">
+                        <input type="checkbox" name="Terminos" id="Terminos" class="form-check-input" required title="Es necesario que aceptes las condiciones">
+                        <label class="form-check-label" for="gridCheck">
+                            Acepto Terminos y Condiciones
+                        </label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="Comentarios" class="form-label">Comentarios</label>
+                        <textarea name="Comentarios" id="Comentarios" class="form-control"
+                            rows="4" maxlength="320" placeholder="Escribe tu mensaje (máximo 320 caracteres)..." title="Deja un comentario, es opcional"></textarea>
+                    </div>
+                    <div class="col-12 text-center">
+                        <button type="submit" class="btn btn-primary w-50">Enviar Formulario</button>
+                    </div>        
+                </form>
+        </section>
+
+    </main>
+    
+    <footer class="p-3" id="PieDePag">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Intro">Bienvenido</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Productos">Productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Servicios">Servicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Preguntas">Preguntas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Ubicacion">Ubícanos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Formulario">Contáctenos</a>
+            </li>
+        </ul>
+
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="assets/img/footer/facebook.svg" alt="Facebook"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="assets/img/footer/instagram.svg" alt="Instagram"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="assets/img/footer/twitter-x.svg" alt="Twitter"></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html"><img src="assets/img/footer/whatsapp.svg" alt="Whatsapp"></a>
+            </li>
+        </ul>
+        <p class="text text-center">StarCell - &copy; Todos los Derechos Reservados 2026 Elaborado por Jose Pedrique</p>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

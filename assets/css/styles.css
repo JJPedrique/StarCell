@@ -44,7 +44,7 @@ footer{
 
 .carousel-inner img{
     width: 100%;
-    height: 100dvh;
+    height: 60dvh;
 }
 
 .cardTypeA{
@@ -112,4 +112,11 @@ footer{
 
 .text{
     color: #ffffffd4;
+}
+
+@media (min-width: 992px) { 
+    .carousel-inner img{
+        width: 100%;
+        height: 100dvh;
+    }   
 }

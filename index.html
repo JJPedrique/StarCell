@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/Logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/img/Icono.svg" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>StarCell</title>
@@ -396,25 +396,34 @@
         <section class="container justify-content-center my-5" id="Formulario">
             <h2 class="text-center display-6">Escríbenos</h2>
             <p class="text-center">¿Necesitas algo? no dudes en escribirnos</p>
-                <form action="#" method="post" class="row g-3">
+                <form action="#" method="post" class="row g-3" id="formulario">
                     <div class="col-md-6">
                         <label for="Nombre" class="form-label">Nombre</label>
                         <input type="text" name="Nombre" id="Nombre" class="form-control" required 
-                            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$" title="Solo letras y espacios" placeholder="Ej. Jose">
+                            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$" title="Solo letras y espacios." placeholder="Ej. Jose" onblur="ValidarNombre(this)">
+                        <div class="invalid-feedback">
+                            Solo letras y espacios.
+                        </div>
                     </div>
                     <div class="col-md-6">
                         <label for="Apellido" class="form-label">Apellido</label>
                         <input type="text" name="Apellido" id="Apellido" class="form-control" required 
-                            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$" title="Solo letras y espacios" placeholder="Ej. Pérez">
+                            pattern="^[A-Za-záéíóúÁÉÍÓÚñÑ ]+$" title="Solo letras y espacios." placeholder="Ej. Pérez" onblur="ValidarApellido(this)">
+                        <div class="invalid-feedback">
+                            Solo letras y espacios.
+                        </div>
                     </div>
                     <div class="col-6">
                         <label for="Telefono" class="form-label">Teléfono</label>
                         <input type="tel" name="Teléfono" id="Telefono" class="form-control" required 
-                            pattern="[0-9]{4}-[0-9]{7}" title="Introduzca un número de teléfono válido" placeholder="0000-0000000">
+                            pattern="[0-9]{4}-[0-9]{7}" title="Introduzca un número de teléfono válido." placeholder="0000-0000000" onblur="ValidarTelefono(this)">
+                        <div class="invalid-feedback">
+                            Introduzca un número de teléfono válido
+                        </div>
                     </div>
                     <div class="col-6">
                         <label for="Marca" class="form-label">Marca de Teléfono</label>
-                        <select id="Marca" class="form-select" title="Elige tu Teléfono">
+                        <select id="Marca" class="form-select" title="Elige tu marca de teléfono." onblur="ValidarMarca(this)">
                             <option value="" selected>-- Selecciona --</option>
                             <option value="Samsung">Samsung</option>
                             <option value="Apple">Apple</option>
@@ -429,10 +438,13 @@
                             <option value="Google">Google (Pixel)</option>
                             <option value="ZTE">ZTE</option>
                         </select>
+                        <div class="invalid-feedback">
+                            Elige tu marca de teléfono.
+                        </div>
                     </div>
                     <div class="col-12">
                         <div class="form-check">
-                        <input type="checkbox" name="Terminos" id="Terminos" class="form-check-input" required title="Es necesario que aceptes las condiciones">
+                        <input type="checkbox" name="Terminos" id="Terminos" class="form-check-input" required title="Es necesario que aceptes las condiciones" onclick="ValidarTyC(this)">
                         <label class="form-check-label" for="Terminos">
                             Acepto Terminos y Condiciones
                         </label>
@@ -440,11 +452,15 @@
                     </div>
                     <div class="mb-3">
                         <label for="Comentarios" class="form-label">Comentarios</label>
-                        <textarea name="Comentarios" id="Comentarios" class="form-control"
-                            rows="4" maxlength="320" placeholder="Escribe tu mensaje (máximo 320 caracteres)..." title="Deja un comentario, es opcional"></textarea>
+                        <textarea name="Comentarios" id="Comentarios" class="form-control" required
+                            rows="4" maxlength="320" placeholder="Escribe tu mensaje (mínimo  10 máximo 320 caracteres)..." title="Deja un comentario, es opcional" onblur="ValidarComentarios(this)"></textarea>
+                        <div class="invalid-feedback">
+                            Escribe algo.
+                        </div>
+                    
                     </div>
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-primary w-50">Enviar Formulario</button>
+                        <button type="button" class="btn btn-primary w-50" onclick="EvaluarFormulario()">Enviar Formulario</button>
                     </div>        
                 </form>
         </section>
@@ -494,5 +510,6 @@
     </footer>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

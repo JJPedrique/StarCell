@@ -110,8 +110,9 @@ function EvaluarFormulario(){
     //En caso de haber un false, salte de la función
     for (let i = 0; i < validaciones.length; i++) {
         if(!validaciones[i]){
-            alert("¡Alerta! Debe llenar correctamente los campos del formulario.");
-            esValido = false; return;}
+            let miModal = new bootstrap.Modal(document.getElementById('ModalError'));
+            miModal.show();
+            return;}
     }
 
     let contenidoModal =  "Todo esta bien, enviando el siguiente contenido: <ul>"

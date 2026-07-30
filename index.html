@@ -395,7 +395,7 @@
 
         <section class="container justify-content-center my-5" id="Formulario">
             <h2 class="text-center display-6">Escríbenos</h2>
-            <p class="text-center">¿Necesitas algo? no dudes en escribirnos</p>
+            <p class="text-center">¿Necesitas algo? no dudes en escribirnos.</p>
                 <form action="#" method="post" class="row g-3" id="formulario">
                     <div class="col-md-6">
                         <label for="Nombre" class="form-label">Nombre</label>
@@ -446,14 +446,14 @@
                         <div class="form-check">
                         <input type="checkbox" name="Terminos" id="Terminos" class="form-check-input" required title="Es necesario que aceptes las condiciones" onclick="ValidarTyC(this)">
                         <label class="form-check-label" for="Terminos">
-                            Acepto Terminos y Condiciones
+                            Acepto Términos y Condiciones
                         </label>
                         </div>
                     </div>
                     <div class="mb-3">
                         <label for="Comentarios" class="form-label">Comentarios</label>
                         <textarea name="Comentarios" id="Comentarios" class="form-control" required
-                            rows="4" maxlength="320" placeholder="Escribe tu mensaje (mínimo  10 máximo 320 caracteres)..." title="Deja un comentario, es opcional" onblur="ValidarComentarios(this)"></textarea>
+                            rows="4" maxlength="320" placeholder="Escribe tu mensaje (mínimo 10 máximo 320 caracteres)..." title="Deja un comentario, es opcional" onblur="ValidarComentarios(this)"></textarea>
                         <div class="invalid-feedback">
                             Escribe algo.
                         </div>
@@ -509,7 +509,26 @@
         <p class="text text-center">StarCell - &copy; Todos los Derechos Reservados 2026 Elaborado por Jose Pedrique</p>
     </footer>
 
+    <div class="modal fade" id="ModalResultados" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Notificación</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="ModalCuerpo" class="modal-body">
+                
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
+
+

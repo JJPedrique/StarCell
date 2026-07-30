@@ -114,7 +114,19 @@ function EvaluarFormulario(){
             esValido = false; return;}
     }
 
-    alert("Todo esta bien, Subiendo formulario");
+    let contenidoModal =  "Todo esta bien, enviando el siguiente contenido: <ul>"
+                            + "<li><b>Nombre: </b>"+ escaparHTML (document.getElementById("Nombre").value) + "</li>"
+                            + "<li><b>Apellido: </b>"+ escaparHTML (document.getElementById("Apellido").value) + "</li>"
+                            + "<li><b>Teléfono: </b>"+ escaparHTML (document.getElementById("Telefono").value) + "</li>"
+                            + "<li><b>Marca de Teléfono: </b>"+ escaparHTML (document.getElementById("Marca").value) + "</li>"
+                            + "<li><b>Acepto Términos: </b>"+ escaparHTML (document.getElementById("Terminos").value) + "</li>"
+                            + "<li><b>Comentarios:  </b>"+ escaparHTML (document.getElementById("Comentarios").value) + "</li>"
+                            + "</ul>";
+
+    document.getElementById('ModalCuerpo').innerHTML = contenidoModal;
+    let miModal = new bootstrap.Modal(document.getElementById('ModalResultados'));
+    miModal.show();
+
     LimpiarFormulario();
 }
 

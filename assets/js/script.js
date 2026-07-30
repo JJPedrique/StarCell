@@ -107,7 +107,7 @@ function EvaluarFormulario(){
     validaciones.push(ValidarTyC(document.getElementById("Terminos")));
     validaciones.push(ValidarComentarios(document.getElementById("Comentarios")));
 
-    //En caso de haber un false salte de la funcion
+    //En caso de haber un false, salte de la función
     for (let i = 0; i < validaciones.length; i++) {
         if(!validaciones[i]){
             alert("¡Alerta! Debe llenar correctamente los campos del formulario.");
@@ -119,7 +119,7 @@ function EvaluarFormulario(){
                             + "<li><b>Apellido: </b>"+ escaparHTML (document.getElementById("Apellido").value) + "</li>"
                             + "<li><b>Teléfono: </b>"+ escaparHTML (document.getElementById("Telefono").value) + "</li>"
                             + "<li><b>Marca de Teléfono: </b>"+ escaparHTML (document.getElementById("Marca").value) + "</li>"
-                            + "<li><b>Acepto Términos: </b>"+ escaparHTML (document.getElementById("Terminos").value) + "</li>"
+                            + "<li><b>Aceptó Términos: </b>"+ "Sí" + "</li>"
                             + "<li><b>Comentarios:  </b>"+ escaparHTML (document.getElementById("Comentarios").value) + "</li>"
                             + "</ul>";
 

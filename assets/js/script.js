@@ -129,7 +129,7 @@ function EvaluarFormulario(){
 
     Swal.fire({
         title: "<strong>¡Exito!</strong>",
-        icon: "info",
+        icon: "success",
         html: "<style>*{text-align: left;}</style>"+contenidoModal,
         });
     LimpiarFormulario();

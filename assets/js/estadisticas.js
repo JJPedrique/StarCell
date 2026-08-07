@@ -15,12 +15,12 @@ new Chart(ctx, {
         label: 'Cuota de Mercado (%)',
         data: [31.5, 18.2, 16.8, 15.1, 10.4, 8.0],
         backgroundColor: [
-        '#0d6efd',
-        '#0dcaf0', 
-        '#198754', 
-        '#ffc107', 
-        '#fd7e14', 
-        '#6c757d'  
+        '#003483',
+        '#004cbd', 
+        '#217aff', 
+        '#5197ff', 
+        '#82b4ff', 
+        '#c1d6ff'  
         ],
         borderWidth: 1,
         borderRadius: 6

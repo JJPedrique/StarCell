@@ -6,6 +6,11 @@
     --accent: #ff9e3d;
 }
 
+:target, 
+[id] {
+  scroll-margin-top: 60px; 
+}
+
 body{background-color: var(--background);}
 
 footer{

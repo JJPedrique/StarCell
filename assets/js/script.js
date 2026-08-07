@@ -110,8 +110,11 @@ function EvaluarFormulario(){
     //En caso de haber un false, salte de la función
     for (let i = 0; i < validaciones.length; i++) {
         if(!validaciones[i]){
-            let miModal = new bootstrap.Modal(document.getElementById('ModalError'));
-            miModal.show();
+            Swal.fire({
+                icon: "warning",
+                title: "Hubo un problema.",
+                text: "Por favor, llene los campos correctamente.",
+                });
             return;}
     }
 
@@ -124,10 +127,11 @@ function EvaluarFormulario(){
                             + "<li><b>Comentarios:  </b>"+ escaparHTML (document.getElementById("Comentarios").value) + "</li>"
                             + "</ul>";
 
-    document.getElementById('ModalCuerpo').innerHTML = contenidoModal;
-    let miModal = new bootstrap.Modal(document.getElementById('ModalResultados'));
-    miModal.show();
-
+    Swal.fire({
+        title: "<strong>¡Exito!</strong>",
+        icon: "info",
+        html: "<style>*{text-align: left;}</style>"+contenidoModal,
+        });
     LimpiarFormulario();
 }
 
@@ -142,4 +146,10 @@ function LimpiarFormulario(){
 
     const myForm = document.getElementById('formulario');
     myForm.reset();
+}
+
+function irArriba(){
+    window.scrollTo({
+        top:0,behavior:'smooth'
+    });
 }

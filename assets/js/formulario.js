@@ -147,9 +147,3 @@ function LimpiarFormulario(){
     const myForm = document.getElementById('formulario');
     myForm.reset();
 }
-
-function irArriba(){
-    window.scrollTo({
-        top:0,behavior:'smooth'
-    });
-}
